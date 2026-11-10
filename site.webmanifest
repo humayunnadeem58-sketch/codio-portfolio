@@ -1,0 +1,16 @@
+{
+  "name": "Software Engineer Portfolio",
+  "short_name": "Portfolio",
+  "description": "Personal portfolio website for a software engineer showcasing engineering projects, technical skills, and experience.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#e01010",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

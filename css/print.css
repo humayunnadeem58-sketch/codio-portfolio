@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Print Stylesheet
+   Optimized for clean resume/portfolio printing and PDF export
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #111;
+    background: #fff;
+  }
+
+  .header,
+  .footer,
+  .skip-link,
+  .theme-toggle,
+  .menu-toggle,
+  .mobile-nav-backdrop,
+  .mobile-nav-drawer,
+  .projects-filter-bar,
+  .hero-actions,
+  .toast,
+  .fallback-notice,
+  #contact-form,
+  .project-actions {
+    display: none !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .section {
+    padding: 1.5rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .hero {
+    padding: 0 0 1.5rem 0 !important;
+  }
+
+  .hero-title {
+    font-size: 20pt !important;
+    color: #000 !important;
+  }
+
+  .hero-role {
+    font-size: 13pt !important;
+    color: #333 !important;
+  }
+
+  .section-title {
+    font-size: 14pt !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-bottom: 10px !important;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    padding-left: 0 !important;
+    margin-bottom: 1rem !important;
+    page-break-inside: avoid;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .timeline-card,
+  .project-card,
+  .pillar-card,
+  .skill-category-card {
+    border: 1px solid #eee !important;
+    padding: 0.75rem !important;
+    page-break-inside: avoid;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+}
